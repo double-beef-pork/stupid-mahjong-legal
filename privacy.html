@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>バカ麻雀 プライバシーポリシー</title>
+  <style>
+    body { font-family: "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #2A221C; background: #F7EFE0; }
+    a { color: #B4332C; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.15rem; margin-top: 1.5rem; }
+  </style>
+</head>
+<body>
+  <p><a href="index.html">← Legal トップ</a></p>
+  <h1>バカ麻雀 プライバシーポリシー</h1>
+  
+<p>最終更新: 2026-09-23  </p>
+<p>開発者 / パブリッシャー: DoubleBeefPork  </p>
+<p>製品: バカ麻雀 / Stupid Mahjong</p>
+
+<p>公開用ミラー: https://double-beef-pork.github.io/stupid-mahjong-legal/（リポ `double-beef-pork/stupid-mahjong-legal`）。本ファイルが正本。</p>
+
+<h2>連絡先</h2>
+
+<p>サポートは <strong>Steam コミュニティのディスカッション</strong> のみです。メールアドレスは公開しません。</p>
+
+<h2>外部へ送るデータ（Live AI）</h2>
+
+<p>通常の初回上がり判定は端末内の意味辞書だけで完結し、外部へ送りません。</p>
+
+<p>次のときだけ、ホスト機が開発者の HTTPS 判定プロキシへ送ります。</p>
+
+<ul>
+<li>1000点の精密再判定</li>
+<li>他家の「ちょっとまったー」異議（および続く反論）</li>
+</ul>
+
+<p>送るもの:</p>
+
+<ul>
+<li>手牌のラベル（かな / 国名など）</li>
+<li>局のテーマ ID</li>
+<li>異議・反論のテキスト</li>
+<li>認証用の Steam セッショントicket（プロキシがアカウント単位の日次上限を数えるため）</li>
+</ul>
+
+<p>送らないもの:</p>
+
+<ul>
+<li>プレイヤー名、見た目、Steam 表示名、顔写真</li>
+<li>ゲームが意図して付与する IP や端末識別子（一般的な HTTPS 接続のネットワーク情報はプロキシ／ホスティング側のアクセスログに残り得る）</li>
+</ul>
+
+<p>タイトル初回で同意を求めます。拒否しても通常の辞書判定で遊べます。設定から後で変更できます。</p>
+
+<h2>保持</h2>
+
+<ul>
+<li>プロキシの運用ログ（request id、SteamID のハッシュ、HTTP status、token 数）: 最大 14 日。プロンプト本文・手牌・API キーは残しません。</li>
+<li>OpenAI API 側の保持は提供者の既定（最大約 30 日）に従います。Zero Data Retention が取れれば利用しますが必須ではありません。</li>
+</ul>
+
+<h2>課金と上限</h2>
+
+<p>精密再判定の外部呼び出しは開発者負担です。Steam アカウントあたり UTC 日次 40 回を超えると辞書のみになり、「本日の精密判定の上限に達しました。」と表示します。</p>
+
+<h2>解析</h2>
+
+<p>Unity Analytics、クラッシュレポーター、その他の解析 SDK は入れません。プロキシの運用ログ以外のテレメトリはありません。</p>
+
+<h2>Steam Overlay</h2>
+
+<p>Steam Overlay（Shift+Tab）および Valve が提供する通報手段をゲーム側で無効化しません。</p>
+</body>
+</html>
